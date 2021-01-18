@@ -26,6 +26,8 @@ see the deployed web app by running `heroku open`
 
 ## more to do
 
-display on topbar: x users is typing
+display on topbar: x users typing
+
+image/file transfer
 
 ...
