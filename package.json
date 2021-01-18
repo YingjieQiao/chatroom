@@ -18,7 +18,7 @@
     "node": "10.23.1"
   },
   "scripts": {
-    "dev": "nodemon app.js",
+    "build": "nodemon app.js",
     "start": "node app.js"
   }
 }
