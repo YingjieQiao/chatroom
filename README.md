@@ -4,7 +4,7 @@ Realtime web chatroom built with NodeJS, JQuery and WebSocket.
 
 hosted on heroku: https://fast-bastion-98201.herokuapp.com/
 
-### docs
+## docs
 
 Build: `npm run build`
 
@@ -24,7 +24,7 @@ git push heroku master
 
 see the deployed web app by running `heroku open`
 
-### more to do
+## more to do
 
 display on topbar: x users is typing
 
