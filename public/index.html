@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Realtime Web App</title>
+
+  <meta name="description" content="
+    Realtime Web Apps
+  ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/spaceman_chat.jpg" />
+
+  <meta property="og:title" content="Realtime Web App">
+  <meta property="og:image" content="assets/spaceman_chat.jpg">
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right vh-100" id="sidebar-wrapper">
+      <div class="sidebar-heading">
+        <h5>Online Users</h5>
+      </div>
+      <ul id="online-users" class="list-group list-group-flush">
+        <li id="online-user-admin-bot" class="list-group-item">
+          <p class="d-flex flex-row align-items-center">
+            admin-bot
+            <a class="ml-2"><img src="assets/robot.png" alt="" height="24" /></a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="d-flex flex-column vh-100">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="d-flex flex-row justify-content-between flex-grow-1">
+          <button class="btn" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
+          <div>
+            <h6 class="my-0">Online chatroom</h6>
+            <p class="my-0"><i><a id="user-count">0</a> Users Currently Online</i></p>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid d-flex flex-column">
+        <div class="message-items card card-body my-2">
+        </div>
+        <div class="message-input my-2">
+          <div class="card card-body">
+            <form class="form-inline">
+              <input type="text" class="flex-grow-1" placeholder="Enter your message here ..." autocomplete="off" />
+              <button type="submit" class="btn btn-primary ml-3">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/utils.js"></script>
+  <script src="js/index.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>
