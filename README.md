@@ -1,6 +1,6 @@
 # Chatroom
 
-Realtime web chatroom built with NodeJS, JQuery and WebSocket.
+Realtime web chatroom built with NodeJS, jQuery and WebSocket.
 
 hosted on heroku: https://fast-bastion-98201.herokuapp.com/
 
